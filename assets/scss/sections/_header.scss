@@ -1,0 +1,119 @@
+/*Header start*/
+
+.header{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 80px;
+    @include media (414){
+        height: 75px;
+    }
+    &-logo{
+        @include media(414){
+            width: 60px;
+            height: 43px;
+        }
+    }
+    &-row{
+        @include flex (center , space-between);
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+        
+        @include media(414){
+            padding: 16px;
+            justify-content: space-between;
+        }
+    }
+    &-nav{
+        // margin-left: 131px;
+        @include media(414){
+            display: none;
+        }
+        @include media(893){
+            display: none;
+        }
+    
+    }
+    &-link{
+        color: var(--Black-3, #8D8C8B);
+        font-family: $montserat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        transition: all 0.2s ease-in-out;
+    }
+    &-link:hover{
+        color: #1C1917;
+    }
+    &-link.active{
+        color:  #1C1917;
+    }
+    &-link:not(:last-child){
+        margin-right: 48px;
+    }
+    &-buttons{
+        display: flex;
+        // margin-left: 275px;
+    }
+}
+.ariza-button{
+    @include media(414){
+        width: 156px;
+        height: 43px;
+        flex-shrink: 0;
+        padding: 12px 20px;
+    }
+    cursor: pointer;
+    margin-right: 12px;
+    padding:18px 36px;
+    border-radius: 8px;
+    background:  #FF8541;
+
+    &-text{
+        @include media(414){
+            font-size:16px ;
+            font-weight: 400;
+        }
+        color: #FFF;
+        font-family: $montserat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        transition: all 0.2s ease-in-out;
+    }
+    &-text:hover{
+        color: #1C1917;
+    }
+}
+.til{
+    @include media(414){
+        display: none;
+    }
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 11px 15px 18px ;
+    border-radius: 8px;
+    border: 1px solid  #555351;
+    background: #FFF;
+    &-text{
+        color:  #555351;
+        font-family: $montserat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+.mobile-button{
+    display: none;
+    cursor: pointer;
+    @include media (414){
+        display: block;
+    }
+}
+
+/*Header End*/
