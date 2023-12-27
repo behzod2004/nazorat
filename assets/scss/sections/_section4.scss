@@ -1,0 +1,32 @@
+/*SECTION 4 - START*/
+
+.section4{
+    width: 100%;
+    height: 47px;
+    margin-bottom: 50px;
+    &-title{
+        color: #000;
+        font-family: $montserat;
+        font-size: 39px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 50px;
+
+        @include media(414){
+            font-size: 25px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &-row{
+        width: 100%;
+        height: 100%;
+
+        @include media(414){
+            border-radius: 16px;
+        }
+      }
+}
+
+/*SECTION 4 - END*/

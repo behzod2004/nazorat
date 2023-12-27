@@ -3,38 +3,47 @@
     height: 716px;
     width: 100%;
     margin-bottom: 80px;
+    
     @include media(414){
-        width: 100%;
-        height: 284px;
-        margin-bottom: 32px;    
+        margin-bottom: 32px; 
+        height: 284px;   
     }
 
     &-row{
-        position: relative;
-        border-radius: 26px;
         height: 100%;
         width: 100%;
+        position: relative;
+        border-radius: 26px;
         overflow: hidden;
-        // background-size: cover;
-        // padding-left:80px ;
-        // padding-top: 382px;
-        // background-image: url(../images/section1.png);
-        // &-image{
-        //     @include media(414){
-        //     width: 100%;
-        //     height: auto;
-        //     }
-        // }
+        @include media(414){
+            border-radius: 16px;
+        }
+        &-image{
+            width: 100%;
+            height: auto; 
+            @include media(414){
+                width: 100%;
+                height: 284px;
+                flex-shrink: 0;
+            }
+        }
+        &-titles{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background:linear-gradient(0deg, #000 1.04%, rgba(28, 25, 23, 0.00) 77.98%);
+        }
         &-title{
             @include media(414){
-                font-size: 20px;
-                font-weight: 400;
-                margin: 212px 62px 24px 24px;
+                display: none;
             }
-            // margin-right: 490px;
-            // margin-bottom: 30px;
+            
             position: absolute;
-            z-index: 2;
+            top: 382px;
+            left: 80px;
+            margin-right: 490px;
             color: #FFF;
             font-family: $montserat;
             font-size: 64px;
@@ -42,9 +51,24 @@
             font-weight: 600;
             line-height: 125%; 
         }
+        &-subtitles{
+            @include media(414){
+                position: absolute;
+             top: 212px;
+             left: 24px;
+             margin-right: 0px; 
+            }
+            position: absolute;
+            display: flex;
+            top: 572px;
+            left: 80px;
+            gap: 25px;
+            justify-content: center;
+            margin-right: 790px;
+        }
         &-subtitle{
             @include media(414){
-                display: none;
+                font-size: 20px;
             }
             color: #FFF;
             font-family: $montserat;
@@ -55,13 +79,25 @@
             margin-bottom: 84px;
             
         }
-        &-subtitles{
-            display: flex;
-            margin-right: 790px;
-            @include media(414){
+        &-icon{
+            @include media (414){
                 display: none;
             }
+            width: 64px;
+            height: 64px;
+            flex-shrink: 0;
+            background-color:rgba(0, 0, 0, 0.23);
+            @include flex(center, center);
+            border: 1px solid #fff;
+            border-radius:50%;
+            transition: all 0.2s ease-in-out;
         }
+        &-icon:hover{
+            background-color:rgba(0, 0, 0, 0.43);
+            transform: rotate(30deg);
+
+        }
+        
     }
 }
 /*section1 end*/
