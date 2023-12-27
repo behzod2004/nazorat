@@ -55,7 +55,7 @@
             @include media(414){
                 position: absolute;
              top: 112px;
-             left: 24px;
+             left: 16px;
              margin-right: 0px; 
             }
             position: absolute;
@@ -68,7 +68,7 @@
         }
         &-subtitle{
             @include media(414){
-                font-size: 20px;
+                font-size: 18px;
             }
             color: #FFF;
             font-family: $montserat;

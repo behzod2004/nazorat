@@ -235,7 +235,7 @@ main {
   .section-one-row-subtitles {
     position: absolute;
     top: 112px;
-    left: 24px;
+    left: 16px;
     margin-right: 0px;
   }
 }
@@ -250,7 +250,7 @@ main {
 }
 @media screen and (max-width: 414px) {
   .section-one-row-subtitle {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .section-one-row-icon {
