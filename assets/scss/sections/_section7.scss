@@ -1,0 +1,85 @@
+/*SECTION 7 START*/
+.section7{
+    width: 100%;
+    height: 456px;
+    margin-top: 42px;
+    margin-bottom: 80px;
+    @include media (414){
+        margin-top: 22px;
+        height: auto;
+    }
+    &-row{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5%;
+        @include media(414){
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+        }
+    }
+    &-panel{
+        width: 49%;
+        height: 49%;
+        display: flex;
+        @include media(414){
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+        }
+        
+        &-text{
+            padding: 24px 24px;
+            background-color: #F9F8F6;
+            border-bottom-right-radius: 12px;
+            border-top-right-radius: 12px;
+            @include media(414){
+                padding: 16px 16px;
+                border-bottom-right-radius: 12px;
+                border-top-right-radius: 0px;
+                border-bottom-left-radius: 12px;
+            }
+        }
+        &-title{
+            color:  #1C1917;
+            font-family:$montserat;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 12px;
+            @include media(414){
+                font-size: 21px;
+            }
+        }
+        &-subtitle{
+            color:  #555351;
+            font-family: $montserat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 137.5%;
+        }
+        &-image{
+            width: 100%;
+            height: auto;
+           @include media(414){
+            width: 381px;
+            height: auto;
+           }
+        }
+    }
+    &-mobile-image{
+        display: none;
+        @include media(414){
+            display: block;
+        }
+    }
+}
+.none{
+    @include media(414){
+        display: none;
+    }
+}
+/*SECTION 7 END*/

@@ -164,7 +164,7 @@ main {
 /*Header End*/
 /*Section1 start*/
 .section-one {
-  height: 716px;
+  height: auto;
   width: 100%;
   margin-bottom: 80px;
 }
@@ -207,7 +207,7 @@ main {
 }
 .section-one-row-title {
   position: absolute;
-  top: 382px;
+  bottom: 170px;
   left: 80px;
   margin-right: 490px;
   color: #FFF;
@@ -540,6 +540,13 @@ main {
 .section6 {
   width: 100%;
   height: 600px;
+  margin-bottom: 74px;
+}
+@media screen and (max-width: 414px) {
+  .section6 {
+    margin-bottom: 32px;
+    height: auto;
+  }
 }
 .section6-row {
   margin-top: 50px;
@@ -657,4 +664,307 @@ main {
   margin: 30px 0px 50px 20px;
 }
 
-/*SECTION 6 END*//*# sourceMappingURL=main.css.map */
+/*SECTION 6 END*/
+/*SECTION 7 START*/
+.section7 {
+  width: 100%;
+  height: 456px;
+  margin-top: 42px;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 414px) {
+  .section7 {
+    margin-top: 22px;
+    height: auto;
+  }
+}
+.section7-row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5%;
+}
+@media screen and (max-width: 414px) {
+  .section7-row {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+}
+.section7-panel {
+  width: 49%;
+  height: 49%;
+  display: flex;
+}
+@media screen and (max-width: 414px) {
+  .section7-panel {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+}
+.section7-panel-text {
+  padding: 24px 24px;
+  background-color: #F9F8F6;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+@media screen and (max-width: 414px) {
+  .section7-panel-text {
+    padding: 16px 16px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 12px;
+  }
+}
+.section7-panel-title {
+  color: #1C1917;
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 414px) {
+  .section7-panel-title {
+    font-size: 21px;
+  }
+}
+.section7-panel-subtitle {
+  color: #555351;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+.section7-panel-image {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 414px) {
+  .section7-panel-image {
+    width: 381px;
+    height: auto;
+  }
+}
+.section7-mobile-image {
+  display: none;
+}
+@media screen and (max-width: 414px) {
+  .section7-mobile-image {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .none {
+    display: none;
+  }
+}
+
+/*SECTION 7 END*/
+/*SECTION 8 START*/
+.section8 {
+  width: 100%;
+  height: 468px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 414px) {
+  .section8 {
+    margin-top: 24px;
+    height: 526px;
+  }
+}
+.section8-row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 1%;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 414px) {
+  .section8-row {
+    overflow-x: scroll;
+  }
+}
+.section8-panel {
+  width: 24%;
+  height: 100%;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 414px) {
+  .section8-panel {
+    width: 100%;
+    height: 100%;
+  }
+}
+.section8-panel-title {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 24px;
+  bottom: 27px;
+}
+.section8-panel-subtitle {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section8-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0.03%, rgba(0, 0, 0, 0.5) 126.88%);
+}
+.section8-image {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 414px) {
+  .section8-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+.section8-mobile {
+  width: 196px;
+  height: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background-color: #FF5C01;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 414px) {
+  .section8-mobile {
+    display: block;
+    display: flex;
+  }
+}
+.section8-mobile-title {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*SECTION 8 END*/
+/*SECTION 9 START*/
+.section9 {
+  width: 100%;
+  height: 524px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 414px) {
+  .section9 {
+    display: none;
+  }
+}
+.section9-banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #F9F8F6;
+  flex-shrink: 0;
+  padding-right: 60px;
+  border-radius: 12px;
+}
+.section9-image {
+  width: 50%;
+  height: 100%;
+  margin-right: 125px;
+}
+.section9-right {
+  padding-top: 49px;
+}
+.section9-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+}
+.section9-inputs-title {
+  color: #555351;
+  font-family: "Montserrat";
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 31px;
+}
+.section9-inputs-button {
+  width: 142px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 36px;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: #FF8541;
+  transition: all 0.2s ease-in-out;
+}
+.section9-inputs-button-title {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.section9-inputs-button:hover {
+  background-color: greenyellow;
+}
+.section9-input1 {
+  width: 533px;
+  height: 60px;
+  border-radius: 8px;
+  border: 1px solid #C6C5C5;
+  background-color: #F9F8F6;
+  size: 18;
+}
+.section9-input1:focus {
+  background-color: lightblue;
+}
+.section9-textarea {
+  width: 533px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #C6C5C5;
+  background-color: #F9F8F6;
+}
+.section9-textarea:focus {
+  background-color: lightblue;
+}
+
+@media screen and (max-width: 414px) {
+  .off {
+    display: none;
+  }
+}
+
+/*SECTION 9 END*//*# sourceMappingURL=main.css.map */
