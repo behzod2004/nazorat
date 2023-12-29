@@ -771,7 +771,7 @@ main {
 @media screen and (max-width: 414px) {
   .section8 {
     margin-top: 24px;
-    height: 526px;
+    height: auto;
   }
 }
 .section8-row {
@@ -834,7 +834,7 @@ main {
 @media screen and (max-width: 414px) {
   .section8-image {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 }
 .section8-mobile {
