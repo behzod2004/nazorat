@@ -1,0 +1,139 @@
+/*FOOTER START*/
+
+.footer{
+    width: 100%;
+    height: 256px;
+    background-color: #F9F8F6; 
+    @include media(414){
+        width: 100%;
+        height: auto;
+    }
+    &-logo{
+        width: 110px;
+        height: 79px;
+    }
+    &-row{
+        width: 100%;
+        height: 100%;
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        @include media(414){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        } 
+    }
+    &-1{
+        &-title{
+            color: #000;
+            font-family: $montserat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height:  187.5%; 
+            margin-bottom: 15px;
+        }
+        &-icons{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &-2{
+        &-tel{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 16px;
+
+            &-number{
+                color: #000;
+                font-family: $montserat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 187.5% ;
+            }
+        }
+        &-email{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &-text{
+                color: #000;
+                font-family: $montserat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height:  187.5% ;
+            }
+        }
+    }
+    &-3{
+        @include media(414){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &-text{
+            color: #000;
+            font-family: $montserat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 187.5%;
+            margin-bottom: 13px;
+        }
+
+        &-button{
+            width: 142px;
+            height: 43px;
+            flex-shrink: 0;
+            border-radius: 16px;
+            background: #FFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            &-text{
+                color:  #1C1917;
+                font-family: $montserat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+    &-4{
+        
+        width: 260px;
+        height: 57px;
+        padding: 12px 24px;
+        display: flex;
+        border-radius: 16px;
+        background-color: #FFF;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        &-image{
+            width: 33px;
+            height: 33px;
+        }
+        &-title{
+            color: #000;
+            font-family: $montserat;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+
+/*FOOTER END*/

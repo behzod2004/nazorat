@@ -10,7 +10,7 @@
     }
 
     &-row{
-        height: 100%;
+        height: auto;
         width: 100%;
         position: relative;  
         border-radius: 26px;
@@ -20,7 +20,7 @@
         }
         &-image{
             width: 100%;
-            height: auto;
+            height: 100%;
             @include media(414){
                 width: 100%;
                 height: auto;
@@ -28,7 +28,7 @@
             }
         }
         &-titles{
-            position: absolute;
+            position: relative;
             top: 0px;
             left: 0px;
             width: 100%;
@@ -40,9 +40,9 @@
                 display: none;
             }
             
-            position: absolute;
-            bottom: 170px;
-            left: 80px;
+            // position: absolute;
+            // bottom: 170px;
+            // left: 80px;
             margin-right: 490px;
             color: #FFF;
             font-family: $montserat;
@@ -58,7 +58,7 @@
              left: 16px;
              margin-right: 0px; 
             }
-            position: absolute;
+            // position: absolute;
             display: flex;
             top: 572px;
             left: 80px;
